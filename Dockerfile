@@ -4,6 +4,6 @@ WORKDIR /var/lib/property-inspector
 
 ADD . . 
 
-RUN yarn install --production --frozen-lockfile
+RUN yarn install
 
 CMD ["yarn", "start"]
