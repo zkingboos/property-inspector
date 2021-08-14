@@ -1,0 +1,6 @@
+name: "Property Inspector"
+description: "Powerfull type to work with cross-dependencies"
+
+runs:
+  using: 'docker'
+  image: Dockerfile
