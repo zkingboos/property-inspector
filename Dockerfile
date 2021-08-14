@@ -1,9 +1,9 @@
-FROM node:14.17
+FROM node:14.17-alpine
 
 WORKDIR /var/lib/property-inspector
 
-ADD . . 
+ADD . /var/lib/property-inspector
 
-RUN yarn install
+RUN yarn install --production
 
 CMD ["yarn", "start"]
