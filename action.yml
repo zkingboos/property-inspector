@@ -1,6 +1,13 @@
 name: "Property Inspector"
 description: "Powerfull type to work with cross-dependencies"
 
+inputs:
+  type:
+    description: "Just for test"
+    default: -1
+
 runs:
   using: 'docker'
-  image: Dockerfile
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.type }}

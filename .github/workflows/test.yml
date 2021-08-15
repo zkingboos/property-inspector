@@ -14,5 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Say hello world
-        uses: zkingboos/property-inspector@v1
+        with:
+          path: "property-inspector"
+      - name: test action locally
+        uses: ./
